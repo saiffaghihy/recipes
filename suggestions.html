@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Recipe | GreenBlend</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/suggestions.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">GreenBlend</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="suggestions.html" class="active">Share Recipe</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="suggestions-page">
+        <div class="container">
+            <header class="page-header">
+                <h1>Share Your Recipe</h1>
+                <p>Got a healthy drink recipe? Share it with our community!</p>
+            </header>
+
+            <form id="recipeForm" class="recipe-form">
+                <div class="form-section">
+                    <h2>Basic Information</h2>
+                    <div class="form-group">
+                        <label for="recipeName">Recipe Name*</label>
+                        <input type="text" id="recipeName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description*</label>
+                        <textarea id="description" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prepTime">Prep Time (minutes)*</label>
+                            <input type="number" id="prepTime" required min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="servings">Servings*</label>
+                            <input type="number" id="servings" required min="1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Ingredients</h2>
+                    <div id="ingredientsList">
+                        <div class="ingredient-row">
+                            <input type="text" placeholder="Ingredient" required>
+                            <input type="text" placeholder="Amount" required>
+                            <button type="button" class="remove-btn">x</button>
+                        </div>
+                    </div>
+                    <button type="button" id="addIngredient" class="btn btn-secondary">Add Ingredient</button>
+                </div>
+
+                <div class="form-section">
+                    <h2>Instructions/Recipe</h2>
+                    <textarea id="instructions" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Recipe</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GreenBlend. All rights reserved. Saif Faghihy.</p>
+        </div>
+    </footer>
+
+    <script src="js/suggestions.js"></script>
+</body>
+</html>

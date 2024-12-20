@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | GreenBlend</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/recipes.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">GreenBlend</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="recipes.html" class="active">Recipes</a>
+                <a href="suggestions.html">Share Recipe</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="recipes-page">
+        <div class="container">
+            <header class="page-header">
+                <h1>Drink Recipes</h1>
+                <div class="filters">
+                    <input type="text" id="searchInput" placeholder="Search recipes...">
+                    <select id="filterCategory">
+                        <option value="">All Categories</option>
+                        <option value="detox">Detox</option>
+                        <option value="energy">Energy</option>
+                        <option value="protein">Protein</option>
+                    </select>
+                </div>
+            </header>
+
+            <div class="recipes-grid" id="recipesGrid"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GreenBlend. All rights reserved. Saif Faghihy.</p>
+        </div>
+    </footer>
+
+    <script src="js/recipes.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
